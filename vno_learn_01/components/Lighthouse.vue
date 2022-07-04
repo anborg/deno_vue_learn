@@ -1,14 +1,10 @@
 <template>
   <div id="lighthouse">
     <h3>Another example Vue Component borrowed from Sarah Drasner</h3>
-    <img
-      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/vue-post-photo.jpg"
-      class="main-photo"
-    />
-    <img
-      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/vue-main-profile.jpg"
-      class="main-profile"
-    />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/vue-post-photo.jpg"
+      class="main-photo" />
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/vue-main-profile.jpg"
+      class="main-profile" />
     <div class="main-info">
       <span class="name">Julianne Delfina</span>
       <h3>"It's lovely after it rains"</h3>
@@ -16,10 +12,9 @@
     <hr />
     <ul>
       <individual-comment
-        v-for="comment in allComments"
+        v-for="comment in allComments" 
         :key="comment.key"
-        :commentpost="comment"
-      ></individual-comment>
+        :commentpost="comment" />
     </ul>
     <input
       v-model="newComment"
@@ -33,9 +28,7 @@
 import IndividualComment from './IndividualComment.vue';
 export default {
   name: 'lighthouse',
-  components: {
-    IndividualComment,
-  },
+  components: {IndividualComment,},
   data() {
     return {
       newComment: '',

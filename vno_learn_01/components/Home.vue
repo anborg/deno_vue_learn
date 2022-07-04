@@ -1,14 +1,13 @@
 <template>
   <div id="home">
-    <h1>Welcome to Your vno Project</h1>
+    <h1>Welcome to a vno Project: {{ projectName }}</h1>
+    <img :src="imgUrl" >
     <p>
       Try spinning up your own vno project<br />
       by using our CLI tool here:<a
         href="https://github.com/jgrubb16/vnocli"
         target="_blank"
-        rel="noopener"
-        >Open Source CLI Tool</a
-      >
+        rel="noopener">Open Source CLI Tool</a>
     </p>
     <p>
       If you like this project, please consider taking the time to support us
@@ -17,12 +16,9 @@
     <ul>
       <li>
         Give us a star on
-        <a
-          href="https://github.com/oslabs-beta/vno"
+        <a href="https://github.com/oslabs-beta/vno"
           target="_blank"
-          rel="noopener"
-          >GitHub</a
-        >
+          rel="noopener">GitHub</a>
       </li>
       <li>
         Give us some claps on
@@ -31,9 +27,7 @@
       </li>
       <li>
         Upvote us on
-        <a href="https://www.producthunt.com/" target="_blank" rel="noopener"
-          >Product Hunt</a
-        >
+        <a href="https://www.producthunt.com/" target="_blank" rel="noopener">Product Hunt</a>
         (needs to be updated)
       </li>
     </ul>
@@ -43,6 +37,12 @@
 <script>
 export default {
   name: 'home',
+  data(){
+    return{
+      projectName: 'Vno Learn 01',
+      imgUrl: "assets/images/intro_vue_3.png"
+    }
+  }
 };
 </script>
 
