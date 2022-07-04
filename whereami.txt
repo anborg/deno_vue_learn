@@ -1,0 +1,18 @@
+https://deno.land/x/vno@1.5.1
+
+install
+deno install -f --allow-read --allow-write --allow-run --allow-net --unstable https://deno.land/x/vno/install/vno.ts
+touch vno.config.json
+
+
+Your Project:
+
+    Title: vno_learn_01
+    Root: App
+    Port: 3000
+    Vue: 3
+    Additional Component(s): Home + Test
+    Vue Router: yes
+
+cd vno_learn_01
+vno build
